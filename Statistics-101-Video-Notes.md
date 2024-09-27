@@ -47,4 +47,38 @@
 
     If our regression model is significant, it will "eat up" much of the raw SSE we had when we assumed (like this problem) that the independent variable did not even exist. The regression line will/should literally "fit" the data better. It will minimize the residuals.
 
+    When we do SSE there will be SSE Regression and SSE Error.
+
+    If we say a linear regression model is good it reduces the SSE by a significant amount compared to a mean best fit.
+
+
+    Simple linear regression is reall a comparison of two models
+        one is where the independent variable does not even exist
+        and the other uses the best fit regression line
+    If there is only one variable, the best prediction for other values is the mean of the "dependent" variable
+    The difference betweeen the best-fit line and the observed value is called the residual (or error)
+    The residuals are squared and then added together to generate sum of squares (literally) residuals / error, SSE.
+    Simple linear regression is designed to find the best fitting line through the data that minimizes the SSE
+
+### PL 14 - 2: Linear Regression, Algebra, Equations, and Patterns
+    Bivariate statistics : Two variable statistics
+
+    Correlation + Anova = Linear Regression
+    ANOVA = Analysis of Variance
+    Both Correlation and Regression can be plotted on a graph
+
+    The value of one variable, is a function of the other variable.
+
+    Ex:
+    The value of y, is a function of x: y = f(x)
+
+    The value of the dependent variable is a function of the independent variable.
+
+    slope-intercept form of the line
+    y = mx + b
+    x = random variable
+    m = slope of the line rise/run
+    b = y-intercept (crosses y-axis)
+
+    y-intercept is where x = 0
 

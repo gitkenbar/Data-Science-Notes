@@ -82,3 +82,127 @@
 
     y-intercept is where x = 0
 
+    Coordinate of (0, y)
+
+    y = ß₀ + ß₁ + ε
+
+    ß₀ (beta sub-zero) = y-intercept population perameter
+
+    ß₁ = slope population parameter
+
+    ε = error term, unexplained variation in y
+
+    E(y) = ß₀ + ß₁x is the same as y = mx + b
+
+    E(y) is the mean or expected value of y, for a given value of x
+
+    The expected value is the mean of a small distribution for that y.
+
+    In regression we want to have a narrow range of expected values.
+
+    If we know the population parameters, ß₀ and ß₁, we could use the Simple Linear Regression Equation.
+
+    E(y) = ß₀ + ß₁x
+
+    In reality we almost never have the population parameters. Therefore we will estimate them using sample data. When using sample data, we have to change our equation a little bit.
+
+    ŷ = ß₀ + ß₁x
+
+    ŷ, pronounced "y-hat" is the point estimator of E(y)
+    ŷ, is the mean value of y for a given value of x.
+
+    EX:
+    When conducting simple linear regression with TWO variables, we will determine how good the regression line "fits" the data by comparing it to THIS TYPE; where we pretend the second variable does not even exist; the slope, ß₁ = 0.
+
+    In this situation, the value of ŷ is 10 for every value of x
+    
+    ŷ = ß₀ + ß₁x
+
+    ŷ = ß₀ + (0)x
+
+    ŷ = ß₀
+
+    ß₀ = 10
+
+    ŷ = 10
+
+
+### PL14 - 2: Linear Regression, The Least Squares Method
+
+    min Σ (yᵢ - ŷᵢ)²
+
+    yᵢ = observed value of dependent variable (tip amount)
+
+    ŷᵢ = estimated(predicted) value of the dependent variable (predicted tip amount)
+
+    Plain English. The goal is to minimize the sum of the squared differences between the observed value for the dependent variable (yᵢ) and the estimated/predicted value of the dependent variable(ŷᵢ) that is provided by the regression line. Sum of the squared residuals.
+
+    Not only that, but the sum of the squared residuals should be much smaller than when we just used the dependent variable alone; ß₁ = 0, ŷ = 10 for all values of x. That sum of squared residuals was 120.
+
+    Step 1: Scatter Plot
+
+    Step 2: Look for a line
+
+    Step 3: Correlation (Optional)
+
+    what is the correlation coefficent, r?
+
+    in this case, r = 0.866.
+    
+    Is the relationship strong?
+
+    A value close to 1 or -1 is a strong correlation, so yes.
+
+    Step 4: Centroid
+    Centroid = The average of the independent variable(x) and the dependent variable(y) on the graph
+
+    The best fit-regression line will/must pass through the centroid.
+
+    Step 5: Calculations
+
+    
+
+    ß₁ = Σ(xᵢ - x̄)(yᵢ - ȳ) / Σ(xᵢ - x̄)²
+
+    ß₁ = slope
+    Σ = sum
+    xᵢ = value of the independent variable
+    x̄ = mean of the independent variable
+    yᵢ = value of dependent variable
+    ȳ = mean of the dependent variable
+
+    slope is the sum of the observed value of the independent variable minus the mean of the independent variable, times the product of the obeserved value of the dependent variable and the mean of the dependent variable divided by the sum of the observed value of the independent variable minus the mean of the independent variable squared.
+
+    We need ß₁ to calculate the y-intercept
+
+    b₀ = ȳ - b₁x̄
+
+    1. For each data point.
+    2. Take the x-value and subtract the mean of x.
+    3. Take the y-value and subtract the mean of y
+    4. Multiply Step 2 and Step 3
+    5. Add up all the products
+    -----
+    1. For each data point
+    2. Take the x-value and subtract the mean of x
+    3. Square step 2
+    4. Add up all the products
+   
+   Regression line
+
+   ȳᵢ = b₀ + b₁xᵢ
+
+   b₀ = -0.8188 (intercept)
+   b₁ = 0.1462 (slope)
+
+    ȳᵢ = -0.8188 + 0.1462x
+        or
+    ȳᵢ = 0.1462x - 0.8188
+
+    What does this mean? For every $1 the bill amount (x) increases, we would expect the tip amount to increase by $0.1462 or about 15 cents.
+
+    If the bill amount(x) is zero, then the expected/predicted tip amount is $-0.8188 or negative 82-cents! Does this make sense? NO. The intercept doesn't have to make sense in the "real world"
+
+    But...
+
+    Is this model any good?? (next video)

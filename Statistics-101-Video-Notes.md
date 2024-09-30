@@ -171,7 +171,7 @@
     yᵢ = value of dependent variable
     ȳ = mean of the dependent variable
 
-    slope is the sum of the observed value of the independent variable minus the mean of the independent variable, times the product of the obeserved value of the dependent variable and the mean of the dependent variable divided by the sum of the observed value of the independent variable minus the mean of the independent variable squared.
+    slope is the sum of the observed value of the independent variable minus the mean of the independent variable, times the product of the obeserved value of the dependent variable and the mean of the dependent variable divided by the sum of the observed value of the independent variable minus the mean of the independent variable, squared.
 
     We need ß₁ to calculate the y-intercept
 
